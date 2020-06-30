@@ -1,0 +1,146 @@
+/* === Typography === */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;
+}
+
+h1 {
+    color: #000000;
+    font-size: 72pt;
+    font-family: 'Teko', sans-serif;
+
+}
+
+h2 {
+    color: #000000;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+footer {
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-style: oblique;
+}
+
+nav a {
+    color: #cdcdcd;
+    font-weight: bold;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+/* === Backgrounds === */
+header {
+    background-color: #000000
+}
+
+main {
+    background-color: #cdcdcd
+}
+
+body {
+    background-color: #ffffff
+}
+
+footer {
+    background-color: #000000;
+}
+
+#splash {
+    background-image: url(heading.jpg);
+    background-size: cover;
+}
+
+.adv {
+    background-color: #ff0000
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* === Box Model === */
+#splash {
+    height: 400px;
+}
+
+nav,
+footer,
+#foodarticles {
+    padding: 25px 30px
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+nav a {
+    margin-right: 25px;
+}
+
+/* === Layout === */
+.floatleft {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 45px;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside {
+    margin-left: 35px
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px 10px
+}
+
+body {
+    padding-top: 170px
+}
+
+.adv {
+    padding: 25px 25px;
+    width: 385px;
+    height: 179px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* === Flexbox === */
+#splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
