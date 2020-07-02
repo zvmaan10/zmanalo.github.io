@@ -1,0 +1,76 @@
+/*== BACKGROUND ==*/
+body {
+    background-color: black;
+}
+
+
+/*== FONTS ==*/
+
+#nav1 {
+    font-family: atrament-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 17pt;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+nav a {
+    margin-right: 40px;
+}
+
+#nav2 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11pt;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11pt;
+}
+
+/*== LAYOUT ==*/
+
+header {
+    text-align: right;
+    display: block;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    left: 0px;
+    top: 0px;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
