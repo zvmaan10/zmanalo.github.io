@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Visual Item</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script>
+        let tigerEyes;
+        let tigerUpper;
+        let tigerLower;
+        let clicks = 0;
+
+
+
+        function preload() {
+            tigerEyes =
+                loadImage("https:zvmaan10.github.io/Asset 1.png");
+            tigerUpper =
+                loadImage("https:zvmaan10.github.io/tiger_Upper.png");
+            tigerLower =
+                loadImage("https:zvmaan10.github.io/tiger_Lower_1.png");
+            tigerAudio =
+                loadSound("https:zvmaan10.github.io/tiger.aiff")
+
+
+        }
+        function setup() {
+            createCanvas(500, 750);
+            background("black");
+            imageMode(CENTER);
+        }
+        function draw() {
+            image(tigerEyes, 250, 330.8979);
+            tint(255, 165);
+            if (mouseX >= 0 && mouseX <= 51) {
+                tint(0, 25);
+            } else if (mouseX >= 449) {
+                tint(0, 25);
+            } else if (mouseY >= 110.8979 && mouseY <= 550.8979) {
+                tint(255, 165);
+            } else if (mouseY >= 0 && mouseY <= 110.8979) {
+                tint(0, 25);
+            } else if (mouseY >= 550.8979) {
+                tint(0, 25);
+            }
+        }
+
+    
+        function mouseClicked() {
+            clicks = clicks + 1;
+            console.log(clicks);
+            if (clicks == 1) {
+                noTint();
+                image(tigerUpper, 250, 316.568)
+            } else if (clicks >= 2) {
+                noTint();
+                image(tigerLower, 250, 430.5482);
+                tigerAudio.play();
+            }
+        }
+        
+
+
+
+    </script>
